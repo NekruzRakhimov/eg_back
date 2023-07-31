@@ -5,6 +5,10 @@ import (
 	"eg_back/pkg/repository"
 )
 
-func GetAllEnterprises() (e []models.Enterprise, err error) {
-	return repository.GetAllEnterprises()
+func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) {
+	return repository.GetAllEnterprises(filter)
+}
+
+func GetEnterprisesCount(filter models.Filter) (count int, err error) {
+	return repository.GetEnterprisesCount(filter)
 }
