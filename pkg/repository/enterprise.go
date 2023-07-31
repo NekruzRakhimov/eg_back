@@ -17,6 +17,8 @@ func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) 
 		switch filter.Sort {
 		case "name":
 			sqlQuery = fmt.Sprintf("%s ORDER BY name", sqlQuery)
+		case "id":
+			sqlQuery = fmt.Sprintf("%s ORDER BY id", sqlQuery)
 		case "authorized_capital":
 			sqlQuery = fmt.Sprintf("%s ORDER BY authorized_capital", sqlQuery)
 		default:
