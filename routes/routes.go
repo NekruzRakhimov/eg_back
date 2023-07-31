@@ -22,7 +22,7 @@ func RunAllRoutes() {
 		AllowHeaders:     []string{"Origin", "*"},
 		ExposeHeaders:    []string{"Content-Length"},
 		AllowCredentials: true,
-		AllowAllOrigins:  true,
+		//AllowAllOrigins:  true,
 		//AllowOriginFunc: func(origin string) bool {
 		//	return origin == "https://github.com"
 		//},
