@@ -54,5 +54,8 @@ func GetAllEnterprises(c *gin.Context) {
 		return
 	}
 
+	if len(e) == 0 {
+		e = []models.Enterprise{}
+	}
 	c.JSON(http.StatusOK, e)
 }
