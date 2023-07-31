@@ -44,3 +44,11 @@ func GetEnterprisesCount(filter models.Filter) (count int, err error) {
 
 	return count, nil
 }
+
+func GetEnterpriseByID(id int) (e models.Enterprise, err error) {
+	if err = db.GetDBConn().Raw("select * from public.enterprises WHERE id = ?", id).Scan(&e).Error; err != nil {
+		return models.Enterprise{}, err
+	}
+
+	return e, nil
+}

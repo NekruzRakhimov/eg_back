@@ -10,23 +10,6 @@ import (
 )
 
 func GetAllEnterprises(c *gin.Context) {
-	//e := []models.Enterprise{
-	//	{
-	//		Id:          1,
-	//		Title:       "Test",
-	//		Price:       1000,
-	//		Description: "Test",
-	//		Category:    "Test",
-	//		Image:       "Test",
-	//		//Rating: struct {
-	//		//	Rate  float64 `json:"rate"`
-	//		//	Count int     `json:"count"`
-	//		//}{
-	//		//	Rate:  5,
-	//		//	Count: 2,
-	//		//},
-	//	},
-	//}
 	var filter models.Filter
 	filter.Query = c.Query("_query")
 	filter.Sort = c.Query("_sort")
@@ -57,5 +40,21 @@ func GetAllEnterprises(c *gin.Context) {
 	if len(e) == 0 {
 		e = []models.Enterprise{}
 	}
+	c.JSON(http.StatusOK, e)
+}
+
+func GetEnterpriseByID(c *gin.Context) {
+	id, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	e, err := service.GetEnterpriseByID(id)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
 	c.JSON(http.StatusOK, e)
 }

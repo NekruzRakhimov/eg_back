@@ -281,3 +281,41 @@ Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-
 [GIN-debug] Listening and serving HTTP on :1111
 [GIN] 2023/07/31 - 13:38:07 | 200 |  867.106714ms |             ::1 | GET      "/enterprises?_query=fsd&_limit=-1&_page=2&_sort=name"
 [GIN] 2023/07/31 - 13:38:15 | 200 |  372.205401ms |             ::1 | GET      "/enterprises?_limit=-1&_page=2"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/07/31 - 14:10:18 | 200 |  254.766857ms |             ::1 | GET      "/enterprises/1"
+[GIN] 2023/07/31 - 14:10:22 | 200 |  124.138912ms |             ::1 | GET      "/enterprises/5"
