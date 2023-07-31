@@ -26,7 +26,7 @@ func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) 
 		}
 	}
 
-	if filter.Limit != 0 && filter.Page != 0 {
+	if filter.Limit > 0 && filter.Page != 0 {
 		sqlQuery = fmt.Sprintf("%s LIMIT %d OFFSET %d", sqlQuery, filter.Limit, filter.Page-1)
 	}
 
