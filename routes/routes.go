@@ -45,7 +45,7 @@ func RunAllRoutes() {
 
 func initAllRoutes(r *gin.Engine) {
 	r.GET("/", PingPong)
-	r.GET("/enterprise", controller.GetAllEnterprises)
+	r.GET("/enterprises", controller.GetAllEnterprises)
 }
 
 // PingPong Проверка

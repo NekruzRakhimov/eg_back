@@ -6,10 +6,10 @@
     "log_file": "./logs/gin.log"
   },
   "postgres_params": {
-    "host": "localhost",
+    "host": "trumpet.db.elephantsql.com",
     "port": "5432",
-    "user": "postgres",
-    "password": "postgres",
-    "database": "eg_back_db"
+    "user": "sqhwaece",
+    "password": "hSBdJNCx8BA0wUAN6Kme93cKA7kWfmEU",
+    "database": "sqhwaece"
   }
 }

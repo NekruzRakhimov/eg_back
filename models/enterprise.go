@@ -7,8 +7,8 @@ type Enterprise struct {
 	Description string  `json:"description"`
 	Category    string  `json:"category"`
 	Image       string  `json:"image"`
-	Rating      struct {
-		Rate  float64 `json:"rate"`
-		Count int     `json:"count"`
-	} `json:"rating"`
+	//Rating      struct {
+	//	Rate  float64 `json:"rate"`
+	//	Count int     `json:"count"`
+	//} `json:"rating"`
 }
