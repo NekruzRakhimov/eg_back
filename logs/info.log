@@ -1,0 +1,39 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (4 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (4 handlers)
+[GIN-debug] GET    /enterprise               --> eg_back/pkg/controller.GetAllEnterprises (4 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/07/05 - 14:54:39 | 200 |     808.263µs |             ::1 | GET      "/enterprise"
+[GIN] 2023/07/05 - 14:54:39 | 200 |       57.26µs |             ::1 | GET      "/enterprise"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprise               --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/07/05 - 14:58:41 | 200 |     675.886µs |             ::1 | GET      "/enterprise"
+[GIN] 2023/07/05 - 15:58:53 | 200 |     124.699µs |             ::1 | GET      "/enterprise"
+[GIN] 2023/07/06 - 14:31:31 | 200 |   13.224916ms |             ::1 | GET      "/enterprise"
+[GIN] 2023/07/06 - 14:31:44 | 200 |      23.793µs |             ::1 | GET      "/enterprise"
+[GIN] 2023/07/06 - 16:19:11 | 200 |   11.871344ms |             ::1 | GET      "/enterprise"

@@ -1,0 +1,15 @@
+{
+  "app": {
+    "server_name": "plavno.ly",
+    "port_run": "1111",
+    "server_url": "plavno.ly",
+    "log_file": "./logs/gin.log"
+  },
+  "postgres_params": {
+    "host": "localhost",
+    "port": "5432",
+    "user": "postgres",
+    "password": "postgres",
+    "database": "eg_back_db"
+  }
+}
