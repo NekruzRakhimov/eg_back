@@ -18,6 +18,10 @@ func GetAllEnterprises(c *gin.Context) {
 		filter.Limit, _ = strconv.Atoi(c.Query("_limit"))
 	}
 
+	if c.Query("_authorized_capital_filter") != "" {
+		filter.AuthorizedCapitalFilter, _ = strconv.Atoi(c.Query("_authorized_capital_filter"))
+	}
+
 	if c.Query("_page") != "" {
 		filter.Page, _ = strconv.Atoi(c.Query("_page"))
 	}

@@ -8,9 +8,14 @@ import (
 
 func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) {
 	fmt.Println("query", filter.Query)
-	sqlQuery := "select * from public.enterprises"
+	sqlQuery := "select * from public.enterprises WHERE true "
 	if filter.Query != "" {
-		sqlQuery = sqlQuery + " WHERE name LIKE '%" + filter.Query + "%'"
+		sqlQuery = sqlQuery + " name LIKE '%" + filter.Query + "%'"
+	}
+
+	if filter.AuthorizedCapitalFilter != -1 && filter.AuthorizedCapitalFilter != 0 {
+		sqlQuery = fmt.Sprintf("%s AND authorized_capital < %d",
+			sqlQuery, filter.AuthorizedCapitalFilter)
 	}
 
 	if filter.Sort != "" {
