@@ -31,11 +31,15 @@ func GetAllClassifiers(c *gin.Context) {
 	}
 
 	c.Writer.Header().Set("x-total-count", strconv.Itoa(count))
-	classifier, err := service.GetAllClassifiers(filter)
+	classifiers, err := service.GetAllClassifiers(filter)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"reason": err.Error()})
 		return
 	}
 
-	c.JSON(http.StatusOK, classifier)
+	if len(classifiers) == 0 {
+		classifiers = []models.Classifier{}
+	}
+
+	c.JSON(http.StatusOK, classifiers)
 }
