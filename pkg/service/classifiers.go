@@ -5,6 +5,10 @@ import (
 	"eg_back/pkg/repository"
 )
 
-func GetAllClassifiers() (classifiers []models.Classifier, err error) {
-	return repository.GetAllClassifiers()
+func GetAllClassifiers(filter models.Filter) (classifiers []models.Classifier, err error) {
+	return repository.GetAllClassifiers(filter)
+}
+
+func GetAllClassifiersCount(filter models.Filter) (count int, err error) {
+	return repository.GetAllClassifiersCount(filter)
 }
