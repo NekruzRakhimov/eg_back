@@ -12,3 +12,7 @@ func GetAllClassifiers(filter models.Filter) (classifiers []models.Classifier, e
 func GetAllClassifiersCount(filter models.Filter) (count int, err error) {
 	return repository.GetAllClassifiersCount(filter)
 }
+
+func GetClassifierItems(classifierID, ItemID int) (items []models.ClassifierItem, err error) {
+	return repository.GetClassifierItems(classifierID, ItemID)
+}
