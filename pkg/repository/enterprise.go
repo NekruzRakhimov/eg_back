@@ -18,6 +18,10 @@ func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) 
 			sqlQuery, filter.AuthorizedCapitalFilter)
 	}
 
+	if filter.EnterpriseAgeFilter != "" && filter.EnterpriseAgeFilter != "-1" {
+		sqlQuery = fmt.Sprintf("%s AND date_part('year', CURRENT_DATE) - date_part('year', created_at) %s", sqlQuery, filter.EnterpriseAgeFilter)
+	}
+
 	if filter.Sort != "" {
 		switch filter.Sort {
 		case "name":

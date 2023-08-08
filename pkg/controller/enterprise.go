@@ -26,6 +26,8 @@ func GetAllEnterprises(c *gin.Context) {
 		filter.Page, _ = strconv.Atoi(c.Query("_page"))
 	}
 
+	filter.EnterpriseAgeFilter = c.Query("_enterprise_age_filter")
+
 	fmt.Printf("%+v", filter)
 
 	count, err := service.GetEnterprisesCount(filter)

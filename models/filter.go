@@ -6,4 +6,5 @@ type Filter struct {
 	Query                   string `json:"query"`
 	Sort                    string `json:"sort"`
 	AuthorizedCapitalFilter int    `json:"authorized_capital_filter"`
+	EnterpriseAgeFilter     string `json:"enterprise_age_filter"`
 }
