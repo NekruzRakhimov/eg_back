@@ -11,12 +11,12 @@ func GetReportByStatus(status string, filter models.ReportFilter) (count int, er
 
 	if filter.DateFrom != "" {
 		sqlQuery = fmt.Sprintf(`%s AND 
-		to_date(to_char(created_at, 'DD-MM-YYYY'), 'DD-MM-YYYY') >= to_date('%s', 'DD-MM-YYYY')`, sqlQuery, filter.DateFrom)
+		to_date(to_char(created_at, 'DD-MM-YYYY'), 'DD-MM-YYYY') >= to_date('%s', 'YYYY-MM-DD')`, sqlQuery, filter.DateFrom)
 	}
 
 	if filter.DateTo != "" {
 		sqlQuery = fmt.Sprintf(`%s AND 
-		to_date(to_char(created_at, 'DD-MM-YYYY'), 'DD-MM-YYYY') <= to_date('%s', 'DD-MM-YYYY')`, sqlQuery, filter.DateTo)
+		to_date(to_char(created_at, 'DD-MM-YYYY'), 'DD-MM-YYYY') <= to_date('%s', 'YYYY-MM-DD')`, sqlQuery, filter.DateTo)
 	}
 
 	if filter.Location != "" {
