@@ -13,6 +13,10 @@ func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) 
 		sqlQuery = sqlQuery + " AND name iLIKE '%" + filter.Query + "%'"
 	}
 
+	if filter.Location != "" {
+		sqlQuery = sqlQuery + " AND address iLIKE '%" + filter.Location + "%'"
+	}
+
 	if filter.AuthorizedCapitalFilter != -1 && filter.AuthorizedCapitalFilter != 0 {
 		sqlQuery = fmt.Sprintf("%s AND authorized_capital < %d",
 			sqlQuery, filter.AuthorizedCapitalFilter)
@@ -53,9 +57,17 @@ func GetEnterprisesCount(filter models.Filter) (count int, err error) {
 		sqlQuery = sqlQuery + " AND name iLIKE '%" + filter.Query + "%'"
 	}
 
+	if filter.Location != "" {
+		sqlQuery = sqlQuery + " AND address iLIKE '%" + filter.Location + "%'"
+	}
+
 	if filter.AuthorizedCapitalFilter != -1 && filter.AuthorizedCapitalFilter != 0 {
 		sqlQuery = fmt.Sprintf("%s AND authorized_capital < %d",
 			sqlQuery, filter.AuthorizedCapitalFilter)
+	}
+
+	if filter.EnterpriseAgeFilter != "" && filter.EnterpriseAgeFilter != "-1" {
+		sqlQuery = fmt.Sprintf("%s AND date_part('year', CURRENT_DATE) - date_part('year', created_at) %s", sqlQuery, filter.EnterpriseAgeFilter)
 	}
 
 	//if filter.Sort != "" {

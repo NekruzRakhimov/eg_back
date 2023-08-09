@@ -13,6 +13,7 @@ func GetAllEnterprises(c *gin.Context) {
 	var filter models.Filter
 	filter.Query = c.Query("_query")
 	filter.Sort = c.Query("_sort")
+	filter.Location = c.Query("_location_filter")
 
 	if c.Query("_limit") != "" {
 		filter.Limit, _ = strconv.Atoi(c.Query("_limit"))
