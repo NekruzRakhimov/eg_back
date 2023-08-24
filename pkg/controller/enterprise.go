@@ -63,5 +63,17 @@ func GetEnterpriseByID(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, e)
+	employees, err := service.GetAllEmployeesByEnterpriseID(e.ID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+	if len(employees) == 0 {
+		employees = []models.Employee{}
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"enterprise": e,
+		"employees":  employees,
+	})
 }
