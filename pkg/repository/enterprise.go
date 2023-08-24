@@ -37,6 +37,8 @@ func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) 
 		default:
 			sqlQuery = fmt.Sprintf("%s ORDER BY id", sqlQuery)
 		}
+	} else {
+		sqlQuery = fmt.Sprintf("%s ORDER BY id", sqlQuery)
 	}
 
 	if filter.Limit > 0 && filter.Page != 0 {
