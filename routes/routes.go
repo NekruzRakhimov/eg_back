@@ -47,6 +47,7 @@ func initAllRoutes(r *gin.Engine) {
 	r.GET("/", PingPong)
 	r.GET("/enterprises", controller.GetAllEnterprises)
 	r.GET("/enterprises/:id", controller.GetEnterpriseByID)
+	r.GET("/employees/:id", controller.GetEmployeeByID)
 
 	r.GET("/classifiers", controller.GetAllClassifiers)
 	r.GET("/classifiers/:id/items/:item_id", controller.GetClassifierItems)

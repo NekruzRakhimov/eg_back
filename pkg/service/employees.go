@@ -8,3 +8,7 @@ import (
 func GetAllEmployeesByEnterpriseID(enterpriseID int) (employees []models.Employee, err error) {
 	return repository.GetAllEmployeesByEnterpriseID(enterpriseID)
 }
+
+func GetEmployeeByID(id int) (e models.Employee, err error) {
+	return repository.GetEmployeeByID(id)
+}
