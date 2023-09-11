@@ -72,8 +72,18 @@ func GetEnterpriseByID(c *gin.Context) {
 		employees = []models.Employee{}
 	}
 
+	licences, err := service.GetAllLicencesByEnterpriseID(e.ID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+	if len(licences) == 0 {
+		licences = []models.Licence{}
+	}
+
 	c.JSON(http.StatusOK, gin.H{
 		"enterprise": e,
 		"employees":  employees,
+		"licences":   licences,
 	})
 }

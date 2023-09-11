@@ -1148,3 +1148,63 @@ Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :1111
 [GIN] 2023/09/11 - 18:06:51 | 200 |  1.125001617s |             ::1 | GET      "/enterprises/28"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetAllLicencesByEnterpriseID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/09/11 - 19:41:22 | 200 |  266.963499ms |             ::1 | GET      "/licences/28"
+[GIN] 2023/09/11 - 19:44:05 | 200 |  269.009863ms |             ::1 | GET      "/licences/28"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/09/11 - 19:44:57 | 200 |  256.733561ms |             ::1 | GET      "/licences/1"
+[GIN] 2023/09/11 - 19:45:00 | 200 |  126.498816ms |             ::1 | GET      "/licences/2"
+[GIN] 2023/09/11 - 19:45:01 | 200 |  125.902929ms |             ::1 | GET      "/licences/3"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/09/11 - 19:46:28 | 200 |  969.018116ms |             ::1 | GET      "/enterprises/28"
