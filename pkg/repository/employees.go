@@ -7,7 +7,7 @@ import (
 
 func GetAllEmployeesByEnterpriseID(enterpriseID int) (employees []models.Employee, err error) {
 	if err = db.GetDBConn().
-		Raw("SELECT id, full_name, inn, job_title, birth_date, work_experience FROM employees WHERE enterprise_id = ?", enterpriseID).
+		Raw("SELECT * FROM employees WHERE enterprise_id = ?", enterpriseID).
 		Scan(&employees).Error; err != nil {
 		return nil, err
 	}
@@ -17,7 +17,7 @@ func GetAllEmployeesByEnterpriseID(enterpriseID int) (employees []models.Employe
 
 func GetEmployeeByID(id int) (e models.Employee, err error) {
 	if err = db.GetDBConn().
-		Raw("SELECT id, full_name, inn, job_title, birth_date, work_experience FROM employees WHERE id = ?", id).
+		Raw("SELECT * FROM employees WHERE id = ?", id).
 		Scan(&e).Error; err != nil {
 		return models.Employee{}, err
 	}
