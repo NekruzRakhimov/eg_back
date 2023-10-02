@@ -50,6 +50,21 @@ func GetAllEnterprises(c *gin.Context) {
 	c.JSON(http.StatusOK, e)
 }
 
+func CreateEnterprise(c *gin.Context) {
+	var e models.Enterprise
+	if err := c.BindJSON(&e); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	if err := service.CreateEnterprise(e); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"reason": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"reason": "новое предприятие создано!"})
+}
+
 func GetEnterpriseByID(c *gin.Context) {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {

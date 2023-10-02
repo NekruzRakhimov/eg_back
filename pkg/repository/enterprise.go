@@ -6,6 +6,14 @@ import (
 	"fmt"
 )
 
+func CreateEnterprise(e models.Enterprise) (err error) {
+	if err = db.GetDBConn().Table("enterprises").Omit("id, created_at").Create(&e).Error; err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) {
 	fmt.Println("query", filter.Query)
 	sqlQuery := "select * from public.enterprises WHERE true "

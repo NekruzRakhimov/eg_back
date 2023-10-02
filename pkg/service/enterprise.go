@@ -16,3 +16,7 @@ func GetEnterprisesCount(filter models.Filter) (count int, err error) {
 func GetEnterpriseByID(id int) (e models.Enterprise, err error) {
 	return repository.GetEnterpriseByID(id)
 }
+
+func CreateEnterprise(e models.Enterprise) error {
+	return repository.CreateEnterprise(e)
+}
