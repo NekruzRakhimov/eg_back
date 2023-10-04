@@ -33,6 +33,17 @@ func GetAllClassifiers(filter models.Filter) (classifiers []models.Classifier, e
 	return classifiers, err
 }
 
+func GetClassifierByCode(code string) (c models.Classifier, err error) {
+	sqlQuery := `SELECT id, name, full_name, code, to_char(created_at, 'DD.MM.YYYY') as created_at
+				 FROM classifiers 
+				 WHERE is_removed=false AND lower(code) = lower(?)`
+	if err = db.GetDBConn().Raw(sqlQuery, code).Scan(&c).Error; err != nil {
+		return models.Classifier{}, err
+	}
+
+	return c, nil
+}
+
 func GetAllClassifiersCount(filter models.Filter) (count int, err error) {
 	sqlQuery := "SELECT count(*) FROM classifiers WHERE is_removed=false "
 	if filter.Query != "" {

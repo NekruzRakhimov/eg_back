@@ -52,6 +52,8 @@ func initAllRoutes(r *gin.Engine) {
 	r.GET("/licences/:id", controller.GetLicenceByID)
 
 	r.GET("/classifiers", controller.GetAllClassifiers)
+	r.GET("/classifiers/by_code/:code", controller.GetClassifierByCode)
+
 	r.GET("/classifiers/:id/items/:item_id", controller.GetClassifierItems)
 	r.GET("/classifiers/:id/items", controller.GetClassifierItems)
 

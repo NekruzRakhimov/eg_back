@@ -44,6 +44,18 @@ func GetAllClassifiers(c *gin.Context) {
 	c.JSON(http.StatusOK, classifiers)
 }
 
+func GetClassifierByCode(c *gin.Context) {
+	code := c.Param("code")
+
+	classifier, err := service.GetClassifierByCode(code)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"reason": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, classifier)
+}
+
 func GetClassifierItems(c *gin.Context) {
 	classifierID, err := strconv.Atoi(c.Param("id"))
 	if err != nil {

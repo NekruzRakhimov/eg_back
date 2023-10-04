@@ -9,6 +9,10 @@ func GetAllClassifiers(filter models.Filter) (classifiers []models.Classifier, e
 	return repository.GetAllClassifiers(filter)
 }
 
+func GetClassifierByCode(code string) (c models.Classifier, err error) {
+	return repository.GetClassifierByCode(code)
+}
+
 func GetAllClassifiersCount(filter models.Filter) (count int, err error) {
 	return repository.GetAllClassifiersCount(filter)
 }

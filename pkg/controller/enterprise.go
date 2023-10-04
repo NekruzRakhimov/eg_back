@@ -51,11 +51,18 @@ func GetAllEnterprises(c *gin.Context) {
 }
 
 func CreateEnterprise(c *gin.Context) {
+	type bodyTemp struct {
+		Body models.Enterprise `json:"body"`
+	}
+
+	var body bodyTemp
+
 	var e models.Enterprise
-	if err := c.BindJSON(&e); err != nil {
+	if err := c.BindJSON(&body); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
+	e = body.Body
 
 	if err := service.CreateEnterprise(e); err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"reason": err.Error()})
