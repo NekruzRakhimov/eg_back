@@ -16,7 +16,20 @@ func CreateEnterprise(e models.Enterprise) (err error) {
 
 func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) {
 	fmt.Println("query", filter.Query)
-	sqlQuery := "select * from public.enterprises WHERE true "
+	sqlQuery := `select 
+					id,
+					   name,
+					   (select full_name from classifier_items WHERE id = okved_id) as okved,
+						(select full_name from classifier_items WHERE id = kfc_id) as ownership_type,
+					   inn,
+					   ein,
+					   registration_date,
+					   address,
+					   authorized_capital,
+					   is_removed,
+					   status,
+					   yearly_turnover
+				from public.enterprises WHERE true `
 	if filter.Query != "" {
 		sqlQuery = sqlQuery + " AND name iLIKE '%" + filter.Query + "%'"
 	}
@@ -39,14 +52,14 @@ func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) 
 		case "name":
 			sqlQuery = fmt.Sprintf("%s ORDER BY name", sqlQuery)
 		case "id":
-			sqlQuery = fmt.Sprintf("%s ORDER BY id", sqlQuery)
+			sqlQuery = fmt.Sprintf("%s ORDER BY id DESC", sqlQuery)
 		case "authorized_capital":
 			sqlQuery = fmt.Sprintf("%s ORDER BY authorized_capital", sqlQuery)
 		default:
-			sqlQuery = fmt.Sprintf("%s ORDER BY id", sqlQuery)
+			sqlQuery = fmt.Sprintf("%s ORDER BY id DESC", sqlQuery)
 		}
 	} else {
-		sqlQuery = fmt.Sprintf("%s ORDER BY id", sqlQuery)
+		sqlQuery = fmt.Sprintf("%s ORDER BY id DESC", sqlQuery)
 	}
 
 	if filter.Limit > 0 && filter.Page != 0 {
@@ -62,7 +75,20 @@ func GetAllEnterprises(filter models.Filter) (e []models.Enterprise, err error) 
 
 func GetEnterprisesCount(filter models.Filter) (count int, err error) {
 	fmt.Println("query", filter.Query)
-	sqlQuery := "select * from public.enterprises WHERE true "
+	sqlQuery := `select 
+					id,
+									   name,
+									   (select full_name from classifier_items WHERE id = okved_id) as okved,
+										(select full_name from classifier_items WHERE id = kfc_id) as ownership_type,
+									   inn,
+									   ein,
+									   registration_date,
+									   address,
+									   authorized_capital,
+									   is_removed,
+									   status,
+									   yearly_turnover
+				from public.enterprises WHERE true `
 	if filter.Query != "" {
 		sqlQuery = sqlQuery + " AND name iLIKE '%" + filter.Query + "%'"
 	}
@@ -105,7 +131,18 @@ func GetEnterprisesCount(filter models.Filter) (count int, err error) {
 }
 
 func GetEnterpriseByID(id int) (e models.Enterprise, err error) {
-	if err = db.GetDBConn().Raw("select * from public.enterprises WHERE id = ?", id).Scan(&e).Error; err != nil {
+	if err = db.GetDBConn().Raw(`select id,
+					   name,
+					   (select full_name from classifier_items WHERE id = okved_id) as okved,
+						(select full_name from classifier_items WHERE id = kfc_id) as ownership_type,
+					   inn,
+					   ein,
+					   registration_date,
+					   address,
+					   authorized_capital,
+					   is_removed,
+					   status,
+					   yearly_turnover from public.enterprises WHERE id = ?`, id).Scan(&e).Error; err != nil {
 		return models.Enterprise{}, err
 	}
 
