@@ -1459,3 +1459,152 @@ Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :1111
 [GIN] 2023/10/04 - 13:57:46 | 200 |  664.486682ms |             ::1 | GET      "/enterprises"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] POST   /enterprises              --> eg_back/pkg/controller.CreateEnterprise (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/by_code/:code --> eg_back/pkg/controller.GetClassifierByCode (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/all-items --> eg_back/pkg/controller.GetClassifierAllItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/10/05 - 11:06:48 | 200 |  253.960601ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:10:38 | 200 |   2.62740349s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:11:41 | 200 |  130.770176ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] POST   /enterprises              --> eg_back/pkg/controller.CreateEnterprise (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/by_code/:code --> eg_back/pkg/controller.GetClassifierByCode (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/all-items --> eg_back/pkg/controller.GetClassifierAllItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/10/05 - 13:12:12 | 200 |  257.596077ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:13:12 | 200 |  131.975225ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:13:13 | 200 |  128.824571ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] POST   /enterprises              --> eg_back/pkg/controller.CreateEnterprise (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/by_code/:code --> eg_back/pkg/controller.GetClassifierByCode (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/all-items --> eg_back/pkg/controller.GetClassifierAllItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/10/05 - 13:15:08 | 200 |  3.229451365s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:17:06 | 400 |     121.545µs |             ::1 | GET      "/classifiers/okved/all-items"
+[GIN] 2023/10/05 - 13:17:06 | 200 |  143.709628ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:17:09 | 400 |      20.657µs |             ::1 | GET      "/classifiers/okved/all-items"
+[GIN] 2023/10/05 - 13:17:10 | 200 |  131.245528ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:17:45 | 200 |  230.595155ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:17:45 | 200 |  135.198809ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:17:47 | 200 |  384.224671ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:17:48 | 200 |  432.624917ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:19:17 | 200 |  1.456732003s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:19:17 | 200 |  198.425738ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:21:16 | 200 |  140.193912ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:21:17 | 200 |  1.142147204s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:22:01 | 200 |  136.873301ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:22:01 | 200 |  129.273206ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:22:25 | 200 |  132.154766ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:22:25 | 200 |   132.09852ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:22:33 | 200 |  1.899976905s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:22:34 | 200 |  1.231158209s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:22:55 | 200 |  2.404637201s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:22:55 | 200 |  157.493344ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:23:23 | 200 |  541.793691ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:23:23 | 200 |  255.126254ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:26:30 | 200 |  3.650698053s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:26:32 | 200 |  1.539062711s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] POST   /enterprises              --> eg_back/pkg/controller.CreateEnterprise (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/by_code/:code --> eg_back/pkg/controller.GetClassifierByCode (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/all-items --> eg_back/pkg/controller.GetClassifierAllItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/10/05 - 13:29:16 | 200 |  776.012282ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:29:16 | 200 |   196.44036ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:31:49 | 200 |  136.591288ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:31:49 | 200 |  143.482051ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:32:24 | 200 |  141.063349ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:32:24 | 200 |  135.415462ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:32:45 | 200 |  785.487359ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:32:46 | 200 |  816.195253ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:33:11 | 200 |  137.127619ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:33:11 | 200 |  137.532621ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:33:53 | 200 |  134.528834ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:33:53 | 200 |  142.411171ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:33:56 | 200 |  709.060828ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:33:56 | 200 |  132.559009ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:37:38 | 200 |  396.859253ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:37:38 | 200 |  135.743496ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:37:41 | 200 |  266.274099ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:37:42 | 200 |  382.389026ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:38:00 | 204 |      18.549µs |             ::1 | OPTIONS  "/enterprises"
+[GIN] 2023/10/05 - 13:38:01 | 200 |   553.76856ms |             ::1 | POST     "/enterprises"
+[GIN] 2023/10/05 - 13:38:43 | 200 |  929.715006ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:38:45 | 200 |  2.544007767s |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:38:52 | 200 |  577.732639ms |             ::1 | POST     "/enterprises"
+[GIN] 2023/10/05 - 13:39:20 | 200 |  2.159490412s |             ::1 | POST     "/enterprises"
+[GIN] 2023/10/05 - 13:41:19 | 200 |  129.095739ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:41:19 | 200 |  130.884496ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:42:00 | 200 |   915.14606ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:42:00 | 200 |  142.835934ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:42:10 | 200 |  164.684025ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:42:11 | 200 |  130.156393ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:42:38 | 200 |  471.857808ms |             ::1 | POST     "/enterprises"
+[GIN] 2023/10/05 - 13:42:50 | 200 |  141.738983ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:42:50 | 200 |  131.518524ms |             ::1 | GET      "/classifiers/3/all-items"
+[GIN] 2023/10/05 - 13:42:53 | 200 |  389.070739ms |             ::1 | POST     "/enterprises"

@@ -56,6 +56,7 @@ func initAllRoutes(r *gin.Engine) {
 
 	r.GET("/classifiers/:id/items/:item_id", controller.GetClassifierItems)
 	r.GET("/classifiers/:id/items", controller.GetClassifierItems)
+	r.GET("/classifiers/:id/all-items", controller.GetClassifierAllItems)
 
 	r.GET("/reports/technical_economic/industrial_activity_objects/key_indicators", controller.GetIndustrialObjectsKeyIndicators)
 }

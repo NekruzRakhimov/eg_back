@@ -83,3 +83,15 @@ func GetClassifierItems(classifierID, ItemID int) (items []models.ClassifierItem
 
 	return items, nil
 }
+
+func GetClassifierAllItems(classifierID int) (items []models.ClassifierItem, err error) {
+	sqlQuery := `SELECT ci.id, c.name, ci.full_name, ci.code, to_char(ci.created_at, 'DD.MM.YYYY') as created_at
+					FROM classifier_items ci
+							 JOIN classifiers c on c.id = ci.classifier_id
+					WHERE ci.classifier_id = $1`
+	if err = db.GetDBConn().Raw(sqlQuery, classifierID).Scan(&items).Error; err != nil {
+		return nil, err
+	}
+
+	return items, nil
+}

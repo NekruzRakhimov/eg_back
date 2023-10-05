@@ -85,3 +85,24 @@ func GetClassifierItems(c *gin.Context) {
 
 	c.JSON(http.StatusOK, items)
 }
+
+func GetClassifierAllItems(c *gin.Context) {
+	classifierID, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"reason": err.Error()})
+		return
+	}
+
+	items, err := service.GetClassifierAllItems(classifierID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"reason": err.Error()})
+		return
+	}
+	fmt.Println(items)
+
+	if len(items) == 0 {
+		items = []models.ClassifierItem{}
+	}
+
+	c.JSON(http.StatusOK, items)
+}
