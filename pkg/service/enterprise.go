@@ -20,3 +20,7 @@ func GetEnterpriseByID(id int) (e models.Enterprise, err error) {
 func CreateEnterprise(e models.Enterprise) error {
 	return repository.CreateEnterprise(e)
 }
+
+func AddLicenceToEnterprise(enterpriseID int, licence models.Licence) error {
+	return repository.AddLicenceToEnterprise(enterpriseID, licence)
+}

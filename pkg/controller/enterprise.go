@@ -109,3 +109,29 @@ func GetEnterpriseByID(c *gin.Context) {
 		"licences":   licences,
 	})
 }
+
+func AddLicenceToEnterprise(c *gin.Context) {
+	enterpriseID, err := strconv.Atoi(c.Param("id"))
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	type bodyTemp struct {
+		Body models.Licence `json:"body"`
+	}
+
+	var body bodyTemp
+
+	if err = c.BindJSON(&body); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+		return
+	}
+
+	if err = service.AddLicenceToEnterprise(enterpriseID, body.Body); err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"reason": "новая лицензия успешно добавлена"})
+}
