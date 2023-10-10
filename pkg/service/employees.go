@@ -12,3 +12,7 @@ func GetAllEmployeesByEnterpriseID(enterpriseID int) (employees []models.Employe
 func GetEmployeeByID(id int) (e models.Employee, err error) {
 	return repository.GetEmployeeByID(id)
 }
+
+func CreateEmployee(e models.Employee) error {
+	return repository.CreateEmployee(e)
+}

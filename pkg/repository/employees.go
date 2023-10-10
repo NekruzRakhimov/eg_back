@@ -24,3 +24,12 @@ func GetEmployeeByID(id int) (e models.Employee, err error) {
 
 	return e, nil
 }
+
+func CreateEmployee(e models.Employee) error {
+
+	if err := db.GetDBConn().Table("employees").Create(&e).Error; err != nil {
+		return err
+	}
+
+	return nil
+}
