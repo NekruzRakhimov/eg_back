@@ -52,6 +52,7 @@ func initAllRoutes(r *gin.Engine) {
 	r.GET("/enterprises/:id", controller.GetEnterpriseByID)
 	r.GET("/employees/:id", controller.GetEmployeeByID)
 	r.GET("/licences/:id", controller.GetLicenceByID)
+	r.GET("/enterprise_structure/:enterprise_id/:structure_id", controller.GetEnterpriseStructureByID)
 
 	r.GET("/classifiers", controller.GetAllClassifiers)
 	r.GET("/classifiers/by_code/:code", controller.GetClassifierByCode)

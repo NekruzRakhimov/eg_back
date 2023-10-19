@@ -1819,3 +1819,137 @@ Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-
 Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
 [GIN-debug] Listening and serving HTTP on :1111
 [GIN] 2023/10/10 - 11:10:22 | 200 |  1.116750738s |             ::1 | POST     "/enterprises/85/employee"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] POST   /enterprises              --> eg_back/pkg/controller.CreateEnterprise (5 handlers)
+[GIN-debug] POST   /enterprises/:id/employee --> eg_back/pkg/controller.CreateEmployee (5 handlers)
+[GIN-debug] POST   /enterprises/:id/licence  --> eg_back/pkg/controller.AddLicenceToEnterprise (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/by_code/:code --> eg_back/pkg/controller.GetClassifierByCode (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/all-items --> eg_back/pkg/controller.GetClassifierAllItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/10/18 - 15:36:16 | 200 |  2.747243663s |             ::1 | GET      "/enterprises/97"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] POST   /enterprises              --> eg_back/pkg/controller.CreateEnterprise (5 handlers)
+[GIN-debug] POST   /enterprises/:id/employee --> eg_back/pkg/controller.CreateEmployee (5 handlers)
+[GIN-debug] POST   /enterprises/:id/licence  --> eg_back/pkg/controller.AddLicenceToEnterprise (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/by_code/:code --> eg_back/pkg/controller.GetClassifierByCode (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/all-items --> eg_back/pkg/controller.GetClassifierAllItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/10/18 - 15:36:55 | 200 |  1.069842466s |             ::1 | GET      "/enterprises/97"
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /                         --> eg_back/routes.PingPong (5 handlers)
+[GIN-debug] GET    /enterprises              --> eg_back/pkg/controller.GetAllEnterprises (5 handlers)
+[GIN-debug] POST   /enterprises              --> eg_back/pkg/controller.CreateEnterprise (5 handlers)
+[GIN-debug] POST   /enterprises/:id/employee --> eg_back/pkg/controller.CreateEmployee (5 handlers)
+[GIN-debug] POST   /enterprises/:id/licence  --> eg_back/pkg/controller.AddLicenceToEnterprise (5 handlers)
+[GIN-debug] GET    /enterprises/:id          --> eg_back/pkg/controller.GetEnterpriseByID (5 handlers)
+[GIN-debug] GET    /employees/:id            --> eg_back/pkg/controller.GetEmployeeByID (5 handlers)
+[GIN-debug] GET    /licences/:id             --> eg_back/pkg/controller.GetLicenceByID (5 handlers)
+[GIN-debug] GET    /enterprise_structure/:enterprise_id/:structure_id --> eg_back/pkg/controller.GetEnterpriseStructureByID (5 handlers)
+[GIN-debug] GET    /classifiers              --> eg_back/pkg/controller.GetAllClassifiers (5 handlers)
+[GIN-debug] GET    /classifiers/by_code/:code --> eg_back/pkg/controller.GetClassifierByCode (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items/:item_id --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/items    --> eg_back/pkg/controller.GetClassifierItems (5 handlers)
+[GIN-debug] GET    /classifiers/:id/all-items --> eg_back/pkg/controller.GetClassifierAllItems (5 handlers)
+[GIN-debug] GET    /reports/technical_economic/industrial_activity_objects/key_indicators --> eg_back/pkg/controller.GetIndustrialObjectsKeyIndicators (5 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :1111
+[GIN] 2023/10/18 - 15:45:15 | 200 |  543.262066ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 15:45:31 | 200 |  262.855471ms |             ::1 | GET      "/enterprise_structure/97/0"
+[GIN] 2023/10/18 - 16:06:44 | 200 |  2.038979867s |             ::1 | GET      "/classifiers?_limit=10&_page=1&_query=&_sort="
+[GIN] 2023/10/18 - 16:06:50 | 200 |  3.955547721s |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 16:11:32 | 200 |  1.126694291s |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:12:27 | 200 |  950.208774ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:12:33 | 200 |  553.934063ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:13:30 | 200 |  877.801075ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:15:02 | 200 |  1.852971288s |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:15:29 | 200 |  904.906009ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:15:54 | 200 |  284.837642ms |             ::1 | GET      "/licences/1"
+[GIN] 2023/10/18 - 16:15:57 | 200 |  885.313921ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:17:14 | 200 |  923.195465ms |             ::1 | GET      "/licences/1"
+[GIN] 2023/10/18 - 16:17:15 | 200 |  572.748757ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:29:49 | 200 |  525.324675ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 16:34:20 | 200 |  158.263071ms |             ::1 | GET      "/licences/9"
+[GIN] 2023/10/18 - 16:34:21 | 200 |  619.877595ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:34:22 | 200 |  331.445872ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 16:35:33 | 200 |  598.036887ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:40:03 | 200 |  665.657651ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 16:49:26 | 200 |  447.740906ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 16:49:28 | 200 |  558.715165ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 16:57:59 | 200 |  607.839426ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 17:00:42 | 200 |  288.357367ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 17:00:43 | 200 |  570.251832ms |             ::1 | GET      "/enterprises/96"
+[GIN] 2023/10/18 - 17:00:50 | 200 |  360.527401ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 17:00:51 | 200 |  606.993665ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 17:31:53 | 200 |  2.073306783s |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:32:01 | 200 |  427.587961ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:32:46 | 500 |          1m1s |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:33:00 | 200 |  262.625065ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:40:44 | 200 |  272.463169ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:40:52 | 200 |  267.594598ms |             ::1 | GET      "/enterprise_structure/97/3"
+[GIN] 2023/10/18 - 17:40:54 | 200 |  915.817644ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 17:40:56 | 200 |  917.370921ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 17:40:58 | 200 |  255.941681ms |             ::1 | GET      "/enterprise_structure/97/2"
+[GIN] 2023/10/18 - 17:43:21 | 200 |  264.542768ms |             ::1 | GET      "/enterprise_structure/97/7"
+[GIN] 2023/10/18 - 17:43:28 | 200 |  864.412653ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 17:43:29 | 200 |  525.205166ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 17:43:31 | 200 |  259.503243ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:45:43 | 200 |  283.520313ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 17:45:45 | 200 |   561.63959ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 17:45:52 | 200 |  268.538353ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:46:05 | 200 |  885.417897ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 17:46:22 | 200 |  305.821211ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:48:58 | 200 |  268.675934ms |             ::1 | GET      "/enterprise_structure/97/4"
+[GIN] 2023/10/18 - 17:49:16 | 200 |  262.483234ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:49:37 | 200 |  265.257417ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 17:49:54 | 200 |  255.797718ms |             ::1 | GET      "/enterprise_structure/97/3"
+[GIN] 2023/10/18 - 17:49:59 | 200 |  264.645637ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 17:50:00 | 200 |   515.11077ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 17:50:02 | 200 |  254.998574ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:53:49 | 200 |  515.958936ms |             ::1 | GET      "/classifiers?_limit=10&_page=1&_query=&_sort="
+[GIN] 2023/10/18 - 17:54:03 | 200 |  433.038068ms |             ::1 | GET      "/classifiers?_limit=10&_page=1&_query=&_sort="
+[GIN] 2023/10/18 - 17:54:17 | 200 |  311.874091ms |             ::1 | GET      "/classifiers?_limit=10&_page=1&_query=&_sort="
+[GIN] 2023/10/18 - 17:54:32 | 200 |  263.924744ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 17:54:34 | 200 |  536.690417ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 17:54:35 | 200 |  264.872241ms |             ::1 | GET      "/enterprise_structure/97/1"
+[GIN] 2023/10/18 - 17:54:55 | 200 |    261.2391ms |             ::1 | GET      "/enterprise_structure/97/3"
+[GIN] 2023/10/18 - 18:01:06 | 200 |  286.241744ms |             ::1 | GET      "/enterprises?_limit=10&_page=1&_query=&_sort=&_authorized_capital_filter=-1&_enterprise_age_filter=-1&_location_filter="
+[GIN] 2023/10/18 - 18:01:08 | 200 |  518.902263ms |             ::1 | GET      "/enterprises/97"
+[GIN] 2023/10/18 - 18:01:12 | 200 |  261.225036ms |             ::1 | GET      "/enterprise_structure/97/1"
