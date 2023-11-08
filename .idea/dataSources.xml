@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://trumpet.db.elephantsql.com:5432/sqhwaece</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="postgres@template.eastera.tj" uuid="e5fafd9c-5c0e-4c2a-85b7-658e546ea5bd">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://template.eastera.tj:5432/postgres</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

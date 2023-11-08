@@ -45,6 +45,7 @@ func RunAllRoutes() {
 
 func initAllRoutes(r *gin.Engine) {
 	r.GET("/", PingPong)
+	r.GET("/ping", PingPong)
 	r.GET("/enterprises", controller.GetAllEnterprises)
 	r.POST("/enterprises", controller.CreateEnterprise)
 	r.POST("/enterprises/:id/employee", controller.CreateEmployee)
