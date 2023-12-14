@@ -7,7 +7,7 @@
   },
   "postgres_params": {
     "host": "trumpet.db.elephantsql.com",
-    "port": "5432",
+    "port": "5433",
     "user": "sqhwaece",
     "password": "d1fYDXiFJ977lpIE5lu7Hew0byPt0kwO",
     "database": "sqhwaece"
